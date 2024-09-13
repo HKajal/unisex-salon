@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(rgba(148, 144, 144, 0.22),#009688);  
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+}
+.regcon{
+    width: 400px;
+    height: 450px;
+    box-shadow: 2px 2px 5px 2px rgb(74, 74, 140);
+    margin-left: 480px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    display: flex;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+   
+}
+.regbtn{
+    display: inline-block;
+    /* margin-top: 10px; */
+    margin-left: 19px;
+    position: absolute;
+}
+.btnn{
+    display: inline-block;
+    border: 1px solid white;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 20px;
+    width:120px;
+    margin: 30px;
+    font-weight: bold;
+    box-shadow: 1px 1px 2px 5px rgb(235, 235, 240);
+    z-index: 5;
+    background: radial-gradient(rgb(131, 131, 217),white);
+}
+#reg{
+    filter: grayscale(5px 2px 5px 2px);
+}
+#log{
+    filter: grayscale(5px 2px 5px 2px);
+}
+#butn{
+    display: inline-block;
+    position: absolute;
+    width: 130px;
+    height: 40px; 
+    background: transparent;
+    margin-left: 26px;
+    margin-top: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px 5px;
+}
+.rform{
+    margin-left: 70px;
+    margin-top: 100px;
+    /* text-align: center; */
+}
+
+.frm{
+    width: 270px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0px 20px;
+}
+.rgbtn{
+    padding: 5px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.lbtn{
+    padding: 5px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.lform{
+    /* border: 3px solid red; */
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 70px;
+}
+@media screen and (max-width: 770px){
+    .regcon{
+        margin: auto;
+    }
+    .footer{
+        margin: 50px 0px;
+    }
+}

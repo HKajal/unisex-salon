@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="regcon" id="container">
+            <div class="regform">
+                <div class="regbtn">
+                    <div id="butn"></div>
+                    <div class="btnn" id="reg">Register</div>
+                    <div class="btnn" id="log">Login</div>
+                </div>
+            </div>
+            <div class="rform" id="regg">
+                <form action="" id="form" method="POST" enctype="multipart/form-data">
+                    <div class="ibox">
+                        <input type="text" class="frm" id="name" name="name" required placeholder="enter your name..."><br><br>
+                        <input type="text" class="frm" id="email" name="email" required placeholder="enter email Id..."><br><br>
+                        <input type="tel" class="frm" id="phone" name="phone" required placeholder="enter phone no..."><br><br>
+                        <input type="password" class="frm" id="password" name="password" required placeholder="enter password..."><br><br>
+                        <input type="submit" name="register" value="register" class="rgbtn">
+                    </div>
+                </form>
+            </div>
+            <div class="lform" id="logg">
+                <form action="" id="form" method="POST" enctype="multipart/form-data">
+                    <div class="iibox">
+                        <input type="text" name="emaill" class="frm" id="namee" placeholder="enter emailId... "><br><br>
+                        <!-- <div id="or">Or</div><br> -->
+                        <input type="tel" name="phonee" class="frm" id="phonee" placeholder="enter phoneNo... "><br><br>
+                        <input type="password" name="passwordd" class="frm" id="passwordd" required placeholder="enter password..."><br><br><br>
+                        <input type="submit" name="loggin" value="loggin" class="lbtn" ><br>
+                        <input type="submit" name="forget" value="forget" id="forget" class="lbtn" placeholder="enter "><br>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <section id="footer">
+        <img src="pics/logo4.jpeg" alt="" class="footimg">
+        <div class="tittle-text">
+            <p>CONTACT US</p>
+            <h1>Visit Shop Today</h1>
+        </div>
+        <div class="footRow">
+        <div class="footLeft">
+            <h1>Opening Hours</h1>
+            <p> <i class="fa fa-clock-o"></i> Monday to Friday - 9am to 9pm</p>
+            <p> <i class="fa fa-clock-o"></i> Saturday and Sunday - 8am to 11pm </p>
+        </div>
+        <div class="footRight">
+            <h1>Get In Touch</h1>
+            <p>JJ complex 2nd Floor,Patna <i class="fa fa-map-marker"></i></p>
+            <p>kajalmanish1999@gmail.com <i class="fa fa-paper-plane"></i></p>
+            <p>+91 9988789879 <i class="fa fa-phone"></i></p>
+        </div>
+        </div>
+        <div class="media-icon">
+            <ul>
+                <li><a href="https://www.instagram.com/lakmesalon/"><i class="fa-brands fa-instagram" style="color: rgb(197, 14, 197);"></i></a></li>
+                <li><a href="https://www.facebook.com/LakmeSalon/"><i class="fa-brands fa-facebook" style="color: rgb(4, 4, 204);"></i></a></li>
+                <li><a href="https://x.com/LakmeSalon?mx=2"><i class="fa-brands fa-twitter" style="color: skyblue;"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/lakme-lever/?originalSubdomain=in" style="color: rgb(117, 117, 251);"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+            <p>Copyright Easy Tutorial Youtube Channel</p>
+        </div>
+    </section>
+    <script src="login.js"></script>
+    <?php include 'loginn.php';?>
+</body>
+</html>

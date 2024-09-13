@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="sidenav">
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="service.html">SERVICES</a></li>
+                    <li><a href="#">OFFER</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menubtn">
+            <i class="fa-solid fa-bars" id="menu"></i>
+        </div>
+    <div class="mainfrm">
+        <h2 style="color: #009688; margin: 0px 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Book Your Appointment</h2>
+        <div class="bfrm">
+        <form action="" method="POST" id="bkfrm">
+            <label for="" class="formlabel" id="labcenter">center</label><br>
+            <input type="text" class="forminput" name="center" id="center" placeholder="your center"><br>
+            <label for="" class="formlabel" id="labsearch">select a service</label><br>
+            <select name="services" class="forminput" id="services">
+                <option value="bspa">Body Spa</option>
+                <option value="hspa">Hair Spa</option>
+                <option value="hcut">Hair Cut</option>
+                <option value="streat">Skin Treatment</option>
+                <option value="bmakeup">Bridal Makeup</option>
+                <option value="flift">Face Lifting</option>
+                <option value="pmakeup">Party Makeup</option>
+                <option value="more">more</option>
+            </select>
+            <center><input type="submit" name="submit" value="submit" class="submit"></center>
+        </form>
+    </div>
+    </div>
+</main>
+    <!-- <<<-------------------------------FOOT AREA--------------------------------- -->
+    <section id="footer">
+        <img src="pics/logo4.jpeg" alt="" class="footimg">
+        <div class="tittle-text">
+            <p>CONTACT US</p>
+            <h1>Visit Shop Today</h1>
+        </div>
+        <div class="footRow">
+        <div class="footLeft">
+            <h1>Opening Hours</h1>
+            <p> <i class="fa fa-clock-o"></i> Monday to Friday - 9am to 9pm</p>
+            <p> <i class="fa fa-clock-o"></i> Saturday and Sunday - 8am to 11pm </p>
+        </div>
+        <div class="footRight">
+            <h1>Get In Touch</h1>
+            <p>JJ complex 2nd Floor,Patna <i class="fa fa-map-marker"></i></p>
+            <p>kajalmanish1999@gmail.com <i class="fa fa-paper-plane"></i></p>
+            <p>+91 9988789879 <i class="fa fa-phone"></i></p>
+        </div>
+        </div>
+        <div class="media-icon">
+            <ul>
+                <li><a href="https://www.instagram.com/lakmesalon/"><i class="fa-brands fa-instagram" style="color: rgb(197, 14, 197);"></i></a></li>
+                <li><a href="https://www.facebook.com/LakmeSalon/"><i class="fa-brands fa-facebook" style="color: rgb(4, 4, 204);"></i></a></li>
+                <li><a href="https://x.com/LakmeSalon?mx=2"><i class="fa-brands fa-twitter" style="color: skyblue;"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/lakme-lever/?originalSubdomain=in" style="color: rgb(117, 117, 251);"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+            <p>Copyright Easy Tutorial Youtube Channel</p>
+        </div>
+    </section>
+
+    <script>
+        // alert ("hello")
+        var menubt=document.getElementById("menubtn")
+        var side=document.getElementById("sidenav")
+        var menu=document.getElementById("menu")
+
+        side.style.right="-250px";
+
+        menubt.onclick=function(){
+            if(side.style.right=="-250px"){
+                side.style.right="0px";
+            }
+            else{
+                side.style.right="-250px"
+            }
+        }
+    </script>
+    
+    <?php include 'loginn.php';?>  
+       
+</body>
+</html>
