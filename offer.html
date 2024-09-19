@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="offer.css">
+</head>
+<body>
+    <section id="banner">
+        <img src="pics/logo4.jpeg" alt="" class="logo">
+        <div class="banner-text">
+             <h1>Offers zone</h1>
+            <!--<p>"For Every Look, For Every You."</p>
+            <div class="banner-btn">
+                <a href="#"><span></span>Find Out</a>
+                <a href="login.php"><span></span>Login</a> -->
+            </div>
+        </div>
+    </section>
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="service.php">SERVICES</a></li>
+                <li><a href="offer.html">OFFER</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <i class="fa-solid fa-bars" id="menu"></i>
+    </div>
+    <section id="offer">
+        <div class="tittle-text">
+            <p>Offers</p>
+            <h1>Latest Offers</h1>
+        </div>
+        <div class="offer-row">
+            <div class="offer-col">
+                <div class="offer-img"><img src="./pics/hairoffer.jpeg" alt="">
+                <center><h1>Style Your Hair</h1></center></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, illo cumque dolorum nobis alias.</p>
+            </div>
+            <div class="offer-col">
+                <div class="offer-img"><img src="./pics/menoffer.jpeg" alt="">
+                    <center><h1>Skin care</h1></center>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, illo cumque dolorum nobis alias </p>
+            </div>
+            <div class="offer-col">
+                <div class="offer-img"><img src="./pics/makeupoffer.jpeg" alt="">
+                    <center><h1>Pooja Makeup</h1></center>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, illo cumque dolorum nobis alias </p>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="footer"></section>
+        <img src="pics/logo4.jpeg" alt="" class="footimg">
+        <div class="tittle-text">
+            <p>CONTACT US</p>
+            <h1>Visit Shop Today</h1>
+        </div>
+        <div class="footRow">
+        <div class="footLeft">
+            <h1>Opening Hours</h1>
+            <p> <i class="fa fa-clock-o"></i> Monday to Friday - 9am to 9pm</p>
+            <p> <i class="fa fa-clock-o"></i> Saturday and Sunday - 8am to 11pm </p>
+        </div>
+        <div class="footRight">
+            <h1>Get In Touch</h1>
+            <p>JJ complex 2nd Floor,Patna <i class="fa fa-map-marker"></i></p>
+            <p>kajalmanish1999@gmail.com <i class="fa fa-paper-plane"></i></p>
+            <p>+91 9988789879 <i class="fa fa-phone"></i></p>
+        </div>
+        </div>
+        <div class="media-icon">
+            <ul>
+                <li><a href="https://www.instagram.com/lakmesalon/"><i class="fa-brands fa-instagram" style="color: rgb(197, 14, 197);"></i></a></li>
+                <li><a href="https://www.facebook.com/LakmeSalon/"><i class="fa-brands fa-facebook" style="color: rgb(4, 4, 204);"></i></a></li>
+                <li><a href="https://x.com/LakmeSalon?mx=2"><i class="fa-brands fa-twitter" style="color: skyblue;"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/lakme-lever/?originalSubdomain=in" style="color: rgb(117, 117, 251);"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+            <p>Copyright Easy Tutorial Youtube Channel</p>
+        </div>
+    </section>
+
+
+    <!-- ----------------java script------------ -->
+    <script>
+        // alert ("hello")
+        var menubt=document.getElementById("menubtn")
+        var side=document.getElementById("sidenav")
+        var menu=document.getElementById("menu")
+
+        side.style.right="-250px";
+
+        menubt.onclick=function(){
+            if(side.style.right=="-250px"){
+                side.style.right="0px";
+            }
+            else{
+                side.style.right="-250px"
+            }
+        }
+    </script>    
+</body>
+</html>

@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#banner{
+    background: linear-gradient(rgba(148, 144, 144, 0.22),#009688) ,url(pics/salonnnn.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.logo{
+    width: 80px;
+    position: absolute;
+    top: 4%;
+    left: 5%;
+}
+.banner-text{
+    text-align: center;
+    color: azure;
+    padding-top: 180px;
+}
+.banner-text h1{
+    font-size: 110px;
+    font-family: 'Kaushan Script',cursive;
+}
+.banner-text p{
+    font-size: 20px;
+    font-style: italic;
+}
+.banner-btn{
+    margin: 70px auto 0;
+    /* display: flex; */
+}
+.banner-btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: aliceblue;
+    border: 0.5px solid whitesmoke;  
+    position: relative;
+    z-index: 1; 
+    transition: color 0.3s;
+}
+.banner-btn a span{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    transition: 0.5s;
+}
+.banner-btn a:hover span{
+    width: 100%;
+}
+.banner-btn a:hover{
+    color: #000;
+}
+#sidenav{
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #009688;
+    z-index: 2;
+    transition: 0.5s;
+}
+nav ul li
+{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: azure;
+}
+#menubtn{
+    width: 40px;
+    height: 40px;
+    background: #009688;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px ;
+    z-index: 3;
+    cursor: pointer;
+    color: azure;
+    line-height: 40px;
+}
+
+@media screen and (max-width: 570px){
+    .banner-text h1{
+        font-size: 45px;
+        font-family: 'Kaushan Script',cursive;
+    }
+    .banner-btn a{
+        display: block;
+        margin: 20px auto;
+    }
+    .tittle-text h1{
+        font-size: 32px;
+    }
+    .features{
+        flex-basis: 100%;
+    }
+    .feature-img{
+        flex-basis: 100%;
+    }
+    .feature-img img{
+        width: 100%;
+    }
+    .footLeft,.footRight{
+        flex-basis: 100%;
+        font-size: 14px;
+    }
+}
+
+#feature{
+    width: 100%;
+    padding: 50px 0;
+}
+.tittle-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.tittle-text p{
+    color: #009688;
+    margin: auto;
+    font-size: 21px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tittle-text h1{
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tittle-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.features{
+    flex-basis: 50%;
+}
+.features h1{
+    color: #009688;
+    padding-bottom: 10px;
+}
+.feature-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+.feature-img img{
+    width: 100%;
+    border-radius: 20px;
+}
+.f-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.f-icon1 .fa-solid{
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    line-height: 40px;
+    border-radius: 8px;
+    color: #009688;
+    border: 1px solid #009688;
+}
+.f-text{
+    padding: 0 20px;
+    text-align: initial;
+}
+/* --------------footer-------------- */
+#footer{
+    padding: 100px 0 20px;
+    background-color: #efefef;
+    position: relative;
+}
+.footRow{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footLeft,.footRight{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.footRight{
+    text-align: right;
+}
+.footRow h1{
+    margin: 10px 0;
+}
+.footRow p{
+    line-height: 35px;
+}
+.footLeft .fa ,.footRight .fa{
+    font-size: 20px;
+    color: #009688;
+    margin: 10px 0;
+}
+.footimg{
+    max-width: 370px;
+    opacity: 0.1;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%,-50%);
+}
+.media-icon{
+    text-align: center; 
+}
+.media-icon ul{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: baseline;
+}
+.media-icon li{
+    list-style: none;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    margin: 30px 15px 0;
+}
+.media-icon li a{
+    text-decoration: none;
+    display: flex;
+    /* border: 1px solid #009688; */
+    font-size: 38px;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    text-align: center;
+    font-weight: bold; 
+    transition: .5s;
+}
+.media-icon li a:hover{
+    background-color: #009688;
+    transform: translateY(-7px);
+    color: azure;
+}
+.media-icon p{
+    padding: 15px 0;
+    font-size: 13px;
+}
